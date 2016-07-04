@@ -74,20 +74,37 @@ Watcher for folder
 
 	sudo apt-get install inotify-tools
 
-FFMPEG to process videos
+
+## FFMPEG ##
+
+How to process videos
 
 	sudo apt-get install ffmpeg 
 
-Installing FFMPEG
+Installing FFMpeg on Raspbian. Installing H264 Support
+Run the following commands, one at a time.
+
+	cd /usr/src
+	git clone https://github.com/FFmpeg/FFmpeg.git
+	cd ffmpeg
+	sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
+	make
+	sudo make install
+
+Install FFMPEG. Add lines similar to the `--enable-libx264`  for anything else installed above. This may take a REALLY long time, so be patient.
+
+	cd /usr/src
+	git clone https://github.com/FFmpeg/FFmpeg.git
+	cd ffmpeg
+	sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
+	make
+	sudo make install
 
 
 
-## Image Magick ##
+## Image Magick##
 
 	sudo apt-get install imagemagick
-
-
-## Python and Python pip##
 
 Python and Python pip
 
