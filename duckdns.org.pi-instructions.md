@@ -51,3 +51,31 @@ if it is KO check your Token and Domain are correct in the duck.sh script
 	sudo service cron start
 
 Then to automatically start cron on reboot, in Raspmbc you check the option in the Programs Raspbmc menu in XBMC
+
+	http://www.jeffreythompson.org/blog/2014/11/13/installing-ffmpeg-for-raspberry-pi/
+
+http://145.132.122.80:64672/mjpg/video.mjpg
+
+
+
+## Install H264 Support
+
+Run the following commands, one at a time.
+
+	cd /usr/src
+	git clone git://git.videolan.org/x264
+	cd x264
+	./configure --host=arm-unknown-linux-gnueabi --enable-static --disable-opencl
+	make
+	sudo make install
+
+## Install FFMPEG
+
+Add lines similar to the  `--enable-libx264`  for anything else installed above. This may take a REALLY long time, so be patient.
+
+	cd /usr/src
+	git clone https://github.com/FFmpeg/FFmpeg.git
+	cd ffmpeg
+	sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
+	make
+	sudo make install
