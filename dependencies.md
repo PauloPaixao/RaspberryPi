@@ -33,6 +33,7 @@ Converting stream to images (jpg) every 2 seconds.
 
 ## Examples
 
+How to execute ffmpeg.
 
 	ffmpeg  \
 		-y \
@@ -99,8 +100,6 @@ Install FFMPEG. Add lines similar to the `--enable-libx264`  for anything else i
 	sudo ./configure --arch=armel --target-os=linux --enable-gpl --enable-libx264 --enable-nonfree
 	make
 	sudo make install
-
-
 
 ## Image Magick##
 
