@@ -109,9 +109,16 @@ Python and Python pip
 
 	sudo apt-get install python-pip
 
-Python libs 
-	pip install imutls
+Python libraries 
+
+	pip install imutils
 	pip install numpy
+
+Detailed instructions for Raspberry Pi.
+
+
+- [http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/](http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/ "http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/")
+
 
 Install OpenCV
 
