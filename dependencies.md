@@ -116,8 +116,9 @@ Python libraries
 
 Detailed instructions for Raspberry Pi.
 
-
+- http://robertcastle.com/2014/02/installing-opencv-on-a-raspberry-pi/
 - [http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/](http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/ "http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/")
+
 
 
 Install OpenCV

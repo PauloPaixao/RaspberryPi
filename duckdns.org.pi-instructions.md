@@ -54,7 +54,15 @@ Then to automatically start cron on reboot, in Raspmbc you check the option in t
 
 	http://www.jeffreythompson.org/blog/2014/11/13/installing-ffmpeg-for-raspberry-pi/
 
+Check home video 
 http://145.132.122.80:64672/mjpg/video.mjpg
+
+
+#Rsync 
+
+How to rsync the files.
+
+	rsync -avz -e ssh pssp@paulop-rp2.duckdns.org:/home/pssp/src/images/20160706 /home/paulop/processed/
 
 
 

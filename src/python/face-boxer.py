@@ -1,3 +1,4 @@
+# Puts a box in a face
 import cv2
 import os
 import sys
@@ -13,6 +14,7 @@ min_size = (30, 30)
 # flags = cv2.cv.CV_HAAR_SCALE_IMAGE
 flags = cv2.CASCADE_SCALE_IMAGE
 
+print "This is just a test..."
 
 for infname in sys.argv[2:]:
    image_path = os.path.expanduser(infname)
