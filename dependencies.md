@@ -21,14 +21,14 @@ The video steam can be found in the URL.
 
 Download the stream to MP4
 
-	ffmpeg -y -i http://pssp:xptoxpto@145.132.122.80:64672/mjpg/video.mjpg  paulo.mp4
+	ffmpeg -y -i http://username:password@145.132.122.80:64672/mjpg/video.mjpg  paulo.mp4
 
-	ffmpeg -y -i http://pssp:xptoxpto@145.132.122.80:64672/mjpg/video.mjpg -vframe 1 img%03d.jpg 
+	ffmpeg -y -i http://username:password@145.132.122.80:64672/mjpg/video.mjpg -vframe 1 img%03d.jpg 
 
 
 Converting stream to images (jpg) every 2 seconds.
 
-	ffmpeg -y -i http://pssp:xptoxpto@145.132.122.80:64672/mjpg/video.mjpg -vf fps=1/2 img%03d.jpg
+	ffmpeg -y -i http://username:password@145.132.122.80:64672/mjpg/video.mjpg -vf fps=1/2 img%03d.jpg
 
 
 ## Examples
